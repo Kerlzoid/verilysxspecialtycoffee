@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cà Phê Đặc Sản & Verilys - Bí Quyết Pha Cà Phê Hoàn Hảo</title>
+    <meta name="description" content="Khám phá lý do nước pha cà phê đặc sản không thể là nước thường. Verilys Thủy tinh - Giải pháp hoàn hảo cho ly cà phê đặc sản trọn vị.">
+    <meta name="keywords" content="pha cà phê đặc sản, nước pha cà phê, Verilys, chai thủy tinh, pour-over, cà phê specialty">
+    <meta property="og:title" content="Cà Phê Đặc Sản & Verilys - Bí Quyết Pha Cà Phê Hoàn Hảo">
+    <meta property="og:description" content="Tại sao nước pha cà phê đặc sản không thể là nước thường? Góc nhìn từ Verilys Thủy tinh">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-dark: #0B1A2E;
+            --primary-medium: #1E3A5F;
+            --primary-light: #2A4B7C;
+            --accent-gold: #C8A97E;
+            --coffee-brown: #6F4E37;
+            --light-cream: #FDF8F0;
+            --light-bg: #F8F9FA;
+            --text-dark: #1A1A1A;
+            --text-light: #5A6A7E;
+            --white: #FFFFFF;
+            --shadow: 0 8px 30px rgba(11, 26, 46, 0.1);
+            --shadow-large: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--light-cream);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(11, 26, 46, 0.95);
+            padding: 20px 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo img {
+            height: 42px;
+            width: auto;
+            display: block;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 40px;
+        }
+        
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero-coffee {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(11, 26, 46, 0.92), rgba(11, 26, 46, 0.75)), 
+                        url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+        
+        .hero-coffee-content {
+            max-width: 900px;
+            padding: 60px 20px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(200, 169, 126, 0.2);
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .hero-coffee h1 {
+            font-size: 52px;
+            margin-bottom: 25px;
+            color: var(--white);
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+        
+        .hero-coffee p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+        }
+        
+        .breadcrumb-content {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-medium);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .breadcrumb span {
+            margin: 0 8px;
+            color: var(--text-light);
+        }
+        
+        .breadcrumb .current {
+            color: var(--accent-gold);
+        }
+        
+        /* Section Styling */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 38px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-gold);
+        }
+        
+        .section-title-left h2 {
+            text-align: left;
+        }
+        
+        .section-title-left h2:after {
+            left: 0;
+            transform: none;
+        }
+        
+        /* Science Section */
+        .science-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .science-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--primary-medium);
+        }
+        
+        .science-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+            font-size: 16px;
+        }
+        
+        .tds-meter {
+            background-color: var(--white);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-top: 25px;
+        }
+        
+        .tds-scale {
+            height: 8px;
+            background: linear-gradient(90deg, #2ecc71, #f1c40f, #e67e22, #e74c3c);
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        .tds-markers {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+        
+        .tds-ideal {
+            background-color: rgba(46, 204, 113, 0.15);
+            border-left: 3px solid #2ecc71;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        
+        .science-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-large);
+        }
+        
+        .science-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Glass vs Plastic Section */
+        .comparison-section {
+            background-color: var(--white);
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+        
+        .comparison-card {
+            background-color: var(--light-cream);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .comparison-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .comparison-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .comparison-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .comparison-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+        
+        .pros-cons {
+            text-align: left;
+            margin-top: 20px;
+        }
+        
+        .pros-cons li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .pros-cons li.bad:before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+        }
+        
+        .pros-cons li.good:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2ecc71;
+        }
+        
+        /* Brewing Guide */
+        .brewing-section {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+            color: var(--white);
+        }
+        
+        .brewing-section .section-title h2 {
+            color: var(--white);
+        }
+        
+        .brewing-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .brew-step {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .brew-step:hover {
+            transform: translateY(-8px);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        
+        .brew-step h3 {
+            color: var(--white);
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        .brew-step p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+        }
+        
+        /* Zero Waste Section */
+        .zerowaste-section {
+            background-color: var(--light-cream);
+        }
+        
+        .zerowaste-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .zerowaste-text h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .zerowaste-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+        
+        .reuse-ideas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .reuse-idea {
+            background-color: var(--white);
+            padding: 15px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: var(--shadow);
+        }
+        
+        .reuse-idea i {
+            font-size: 24px;
+            color: var(--accent-gold);
+        }
+        
+        .zerowaste-image {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-large);
+        }
+        
+        .zerowaste-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-dark), #0F2A3E);
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            color: var(--white);
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-content p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline-light {
+            border-color: var(--white);
+            color: var(--white);
+            background-color: transparent;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: var(--white);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 40px;
+            padding-right: 30px;
+        }
+        
+        .footer-col h3 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: var(--white);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-gold);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #CCCCCC;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-coffee h1 {
+                font-size: 42px;
+            }
+            
+            .science-grid,
+            .comparison-grid,
+            .zerowaste-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .brewing-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                background-color: var(--primary-dark);
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-coffee h1 {
+                font-size: 32px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 32px;
+            }
+            
+            .reuse-ideas {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-coffee h1 {
+                font-size: 28px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="https://i.ibb.co/jvr8HZ12/logo.jpg" alt="Verilys">
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="https://bttduong1434-code.github.io/Home/">Trang chủ</a></li>
+                    <li><a href="https://bttduong1434-code.github.io/Home/">Our Water</a></li>
+                    <li><a href="https://bttduong1434-code.github.io/Home/">Sản Phẩm</a></li>
+                    <li><a href="https://verilys-story.vercel.app/">Di Sản</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <a href="index.html">Trang chủ</a>
+                <span>></span>
+                <span class="current">Cà Phê Đặc Sản & Verilys</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-coffee">
+        <div class="hero-coffee-content">
+            <span class="hero-badge">Góc Nhìn Chuyên Sâu</span>
+            <h1>Tại sao nước pha cà phê đặc sản không thể là nước thường?</h1>
+            <p>Khám phá bí mật khoa học đằng sau ly cà phê đặc sản hoàn hảo và vai trò của Verilys Thủy tinh</p>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="section">
+        <div class="container">
+            <div class="science-grid">
+                <div class="science-text">
+                    <h3>🔬 Khoa học đằng sau nước và cà phê</h3>
+                    <p>Cà phê đặc sản (Specialty Coffee) chứa hơn <strong>1.000 hợp chất thơm</strong> khác nhau. Để chiết xuất trọn vẹn những hương vị tinh tế này, nước pha cà phê đóng vai trò quan trọng không kém hạt cà phê.</p>
+                    <p><strong>Độ cứng của nước</strong> ảnh hưởng trực tiếp đến khả năng chiết xuất acid béo và các hợp chất thơm. Nước quá cứng (chứa nhiều Ca²⁺, Mg²⁺) sẽ ức chế quá trình chiết xuất, khiến cà phê bị "cứng" và mất đi độ phức hợp hương vị. Ngược lại, nước quá mềm sẽ không đủ khả năng hòa tan các hợp chất thơm.</p>
+                    
+                    <div class="tds-meter">
+                        <h4>📊 Chỉ số TDS (Total Dissolved Solids)</h4>
+                        <div class="tds-scale"></div>
+                        <div class="tds-markers">
+                            <span>0</span>
+                            <span>75</span>
+                            <span>150</span>
+                            <span>250</span>
+                            <span>500+</span>
+                        </div>
+                        <div class="tds-ideal">
+                            <strong>✅ TDS lý tưởng cho cà phê đặc sản: 75 - 250 ppm</strong><br>
+                            Verilys đạt chuẩn nước mềm, trung tính với TDS ổn định, giúp chiết xuất tối đa hương vị tự nhiên của từng giọt cà phê.
+                        </div>
+                    </div>
+                </div>
+                <div class="science-image">
+                    <img src="https://i.ibb.co/2VGXZst/abcxyz.png" alt="Pha cà phê pour-over với Verilys">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glass vs Plastic Section -->
+    <section class="section comparison-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tại sao chai thủy tinh?</h2>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>🥃 Chai Thủy Tinh Verilys</h3>
+                    <p>Thủy tinh trơ hóa học, không tương tác với nước và các hợp chất trong cà phê</p>
+                    <ul class="pros-cons">
+                        <li class="good">Không hấp thụ mùi</li>
+                        <li class="good">Không giải phóng hóa chất</li>
+                        <li class="good">Giữ nước tinh khiết đến giọt cuối cùng</li>
+                        <li class="good">Có thể tái sử dụng vô hạn</li>
+                    </ul>
+                </div>
+                <div class="comparison-card">
+                    <div class="comparison-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>⚠️ Chai Nhựa PET</h3>
+                    <p>Nhựa PET có thể ảnh hưởng đến chất lượng nước khi để lâu</p>
+                    <ul class="pros-cons">
+                        <li class="bad">Có thể hấp thụ mùi từ môi trường</li>
+                        <li class="bad">Giải phóng chất chống oxy hóa giả tạo khi để lâu</li>
+                        <li class="bad">Ảnh hưởng đến hương vị tinh tế của cà phê đặc sản</li>
+                        <li class="bad">Gây hại cho môi trường</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brewing Guide Section -->
+    <section class="section brewing-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>☕ Hướng dẫn pha cà phê pour-over hoàn hảo với Verilys</h2>
+            </div>
+            <div class="brewing-steps">
+                <div class="brew-step">
+                    <div class="step-number">1</div>
+                    <h3>Tỉ lệ vàng 1:16</h3>
+                    <p>1g cà phê : 16g nước Verilys. Ví dụ: 18g cà phê → 288ml nước. Tỉ lệ này giúp cân bằng vị chua, ngọt và đắng.</p>
+                </div>
+                <div class="brew-step">
+                    <div class="step-number">2</div>
+                    <h3>Nhiệt độ chuẩn</h3>
+                    <p>88-96°C tùy mức độ rang:<br>
+                    • Rang sáng: 90-93°C<br>
+                    • Rang trung: 93-95°C<br>
+                    • Rang tối: 85-88°C</p>
+                </div>
+                <div class="brew-step">
+                    <div class="step-number">3</div>
+                    <h3>Kỹ thuật rót nước</h3>
+                    <p>Rót nước chậm, xoay đều theo vòng tròn từ tâm ra ngoài. Thời gian chiết xuất lý tưởng: 2.5 - 3.5 phút.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zero Waste Section -->
+    <section class="section zerowaste-section">
+        <div class="container">
+            <div class="zerowaste-content">
+                <div class="zerowaste-text">
+                    <h3>🌱 Cam kết tái sử dụng – Zero Waste</h3>
+                    <p>Chai thủy tinh Verilys không chỉ giữ nước tinh khiết mà còn có thể tái sử dụng cho nhiều mục đích khác nhau, góp phần bảo vệ môi trường.</p>
+                    <div class="reuse-ideas">
+                        <div class="reuse-idea">
+                            <i class="fas fa-pour"></i>
+                            <span>Bình rót nước pour-over</span>
+                        </div>
+                        <div class="reuse-idea">
+                            <i class="fas fa-jar"></i>
+                            <span>Đựng syrup, nước cốt</span>
+                        </div>
+                        <div class="reuse-idea">
+                            <i class="fas fa-seedling"></i>
+                            <span>Chậu thủy canh mini</span>
+                        </div>
+                        <div class="reuse-idea">
+                            <i class="fas fa-gift"></i>
+                            <span>Bình đựng quà tặng handmade</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px;"><strong>✅ Hoàn toàn zero waste – Mỗi chai thủy tinh Verilys là một món quà cho hành tinh.</strong></p>
+                </div>
+                <div class="zerowaste-image">
+                    <img src="https://i.ibb.co/1Ympxwp9/500ml.jpg" alt="Tái sử dụng chai thủy tinh Verilys">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>🎁 Đặt ngay bộ 6 chai Verilys Thủy tinh 500ml</h2>
+                <p><strong>🎉 Tặng kèm SỔ TAY PHA CÀ PHÊ ĐẶC SẢN – Hướng dẫn chi tiết từ A-Z dành cho người yêu cà phê!</strong></p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Đặt hàng ngay</a>
+                    <a href="our-water.html" class="btn btn-outline-light">Tìm hiểu thêm về Verilys</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Verilys</h3>
+                    <p>Nước tinh khiết đóng chai thủy tinh cao cấp – Đồng hành cùng những trải nghiệm tinh tế nhất.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên kết</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="our-water.html">Our Water</a></li>
+                        <li><a href="coffee-guide.html">Cà Phê & Verilys</a></li>
+                        <li><a href="index.html#bottles">Sản phẩm</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên hệ</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> 1900.123.456</li>
+                        <li><i class="fas fa-envelope"></i> hello@verilys.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Verilys. Nước tinh khiết cho cà phê đặc sản – Tinh hoa từ thiên nhiên.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if(window.scrollY > 100) {
+                header.style.padding = '15px 0';
+            } else {
+                header.style.padding = '20px 0';
+            }
+        });
+        
+        // Animation on scroll
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.brew-step, .comparison-card, .science-text, .zerowaste-text').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
