@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cà Phê Đặc Sản & Verilys - Bí Quyết Pha Cà Phê Hoàn Hảo</title>
-    <meta name="description" content="Khám phá lý do nước pha cà phê đặc sản không thể là nước thường. Verilys Thủy tinh - Giải pháp hoàn hảo cho ly cà phê đặc sản trọn vị.">
-    <meta name="keywords" content="pha cà phê đặc sản, nước pha cà phê, Verilys, chai thủy tinh, pour-over, cà phê specialty">
-    <meta property="og:title" content="Cà Phê Đặc Sản & Verilys - Bí Quyết Pha Cà Phê Hoàn Hảo">
-    <meta property="og:description" content="Tại sao nước pha cà phê đặc sản không thể là nước thường? Góc nhìn từ Verilys Thủy tinh">
+    <title>Nước Pha Cà Phê Đặc Sản – Bí Quyết Từ Verilys Thủy Tinh</title>
+    <meta name="description" content="Khám phá khoa học về nước pha cà phê đặc sản. Tại sao nước tinh khiết Verilys trong chai thủy tinh là lựa chọn hàng đầu cho pour-over, French press, cold brew. Hướng dẫn chi tiết từ A-Z.">
+    <meta name="keywords" content="pha cà phê đặc sản, nước pha cà phê, Verilys, chai thủy tinh, nước tinh khiết, specialty coffee, pour-over, TDS nước pha cà phê, zero waste">
+    <meta property="og:title" content="Nước Pha Cà Phê Đặc Sản – Bí Quyết Từ Verilys">
+    <meta property="og:description" content="Khoa học và nghệ thuật pha cà phê đặc sản bắt đầu từ nguồn nước. Verilys Thủy tinh – tinh khiết, trung tính, giữ trọn hương vị.">
     <meta property="og:type" content="website">
+    <link rel="canonical" href="https://verilys.com/ca-phe-dac-san-verilys">
     
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +42,7 @@
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--text-dark);
-            line-height: 1.6;
+            line-height: 1.7;
             background-color: var(--light-cream);
         }
         
@@ -171,6 +172,7 @@
             background-color: var(--white);
             padding: 15px 0;
             box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+            margin-top: 82px; /* đẩy xuống dưới header fixed */
         }
         
         .breadcrumb-content {
@@ -471,6 +473,31 @@
             height: auto;
             display: block;
         }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--white);
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .faq-item {
+            background: var(--light-bg);
+            border-radius: 12px;
+            padding: 25px;
+        }
+        .faq-item h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: var(--primary-medium);
+        }
+        .faq-item p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
         
         /* CTA Section */
         .cta-section {
@@ -633,7 +660,8 @@
             
             .science-grid,
             .comparison-grid,
-            .zerowaste-content {
+            .zerowaste-content,
+            .faq-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -726,7 +754,7 @@
         <div class="container">
             <div class="breadcrumb-content">
                 <a href="index.html">Trang chủ</a>
-                <span>></span>
+                <span>/</span>
                 <span class="current">Cà Phê Đặc Sản & Verilys</span>
             </div>
         </div>
@@ -736,8 +764,8 @@
     <section class="hero-coffee">
         <div class="hero-coffee-content">
             <span class="hero-badge">Góc Nhìn Chuyên Sâu</span>
-            <h1>Tại sao nước pha cà phê đặc sản không thể là nước thường?</h1>
-            <p>Khám phá bí mật khoa học đằng sau ly cà phê đặc sản hoàn hảo và vai trò của Verilys Thủy tinh</p>
+            <h1>Nước pha cà phê đặc sản: Không thể là nước thường</h1>
+            <p>Hiểu đúng về nước – bí quyết để mỗi giọt cà phê đặc sản bung tỏa trọn vẹn hương vị. Verilys Thủy tinh, giải pháp nước lý tưởng cho người yêu cà phê.</p>
         </div>
     </section>
 
@@ -746,38 +774,59 @@
         <div class="container">
             <div class="science-grid">
                 <div class="science-text">
-                    <h3>🔬 Khoa học đằng sau nước và cà phê</h3>
-                    <p>Cà phê đặc sản (Specialty Coffee) chứa hơn <strong>1.000 hợp chất thơm</strong> khác nhau. Để chiết xuất trọn vẹn những hương vị tinh tế này, nước pha cà phê đóng vai trò quan trọng không kém hạt cà phê.</p>
-                    <p><strong>Độ cứng của nước</strong> ảnh hưởng trực tiếp đến khả năng chiết xuất acid béo và các hợp chất thơm. Nước quá cứng (chứa nhiều Ca²⁺, Mg²⁺) sẽ ức chế quá trình chiết xuất, khiến cà phê bị "cứng" và mất đi độ phức hợp hương vị. Ngược lại, nước quá mềm sẽ không đủ khả năng hòa tan các hợp chất thơm.</p>
+                    <h3>🔬 Nước chiếm 98% ly cà phê – đừng bỏ qua</h3>
+                    <p>Cà phê đặc sản (Specialty Coffee) sở hữu hơn 1.000 hợp chất thơm, từ hương hoa, trái cây đến chocolate và hạt rang. Nhưng để chiết xuất được những tầng hương đó, nước pha cà phê phải đáp ứng các tiêu chuẩn khắt khe. Nước máy hay nước khoáng thông thường thường chứa clo, canxi, magie ở hàm lượng cao, làm biến đổi hoặc triệt tiêu hoàn toàn vị ngọt tự nhiên và độ chua thanh của cà phê.</p>
+                    <p><strong>Độ cứng của nước</strong> ảnh hưởng trực tiếp đến khả năng chiết xuất acid chlorogenic, đường và các chất béo. Nước quá cứng (nhiều Ca²⁺, Mg²⁺) sẽ liên kết với các hợp chất hương, khiến cà phê bị "phẳng", thiếu chiều sâu. Ngược lại, nước quá mềm (thiếu khoáng) lại không đủ lực ion để kéo các chất thơm ra khỏi bột cà phê. Theo Hiệp hội Cà phê Đặc sản (SCA), nước lý tưởng cần có độ cứng tổng từ 50-175 ppm CaCO₃ và độ kiềm khoảng 40-70 ppm.</p>
                     
                     <div class="tds-meter">
-                        <h4>📊 Chỉ số TDS (Total Dissolved Solids)</h4>
+                        <h4>📊 Chỉ số TDS (Total Dissolved Solids) – "Nhiệt kế" cho nước pha cà phê</h4>
                         <div class="tds-scale"></div>
                         <div class="tds-markers">
-                            <span>0</span>
+                            <span>0 ppm</span>
                             <span>75</span>
                             <span>150</span>
                             <span>250</span>
                             <span>500+</span>
                         </div>
                         <div class="tds-ideal">
-                            <strong>✅ TDS lý tưởng cho cà phê đặc sản: 75 - 250 ppm</strong><br>
-                            Verilys đạt chuẩn nước mềm, trung tính với TDS ổn định, giúp chiết xuất tối đa hương vị tự nhiên của từng giọt cà phê.
+                            <strong>✅ Phạm vi TDS lý tưởng cho cà phê đặc sản: 75 - 250 ppm</strong><br>
+                            Verilys duy trì TDS ổn định trong ngưỡng khuyến nghị, đảm bảo nước đủ sạch để không át hương nhưng vẫn đủ khoáng vi lượng giúp chiết xuất trọn vẹn. Đặc biệt, nước tinh khiết Verilys không chứa clo hay tạp chất hữu cơ – thủ phạm tạo ra vị "cao su" hay "giấy" trong cà phê.
                         </div>
                     </div>
                 </div>
                 <div class="science-image">
-                    <img src="https://i.ibb.co/2VGXZst/abcxyz.png" alt="Pha cà phê pour-over với Verilys">
+                    <img src="https://i.ibb.co/2VGXZst/abcxyz.png" alt="Pha cà phê pour-over với nước Verilys">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phương pháp pha và nước tinh khiết -->
+    <section class="section comparison-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nước tinh khiết & từng phương pháp pha</h2>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-icon"><i class="fas fa-filter"></i></div>
+                    <h3>Pour-over (V60, Chemex)</h3>
+                    <p>Phương pháp này cực kỳ nhạy cảm với chất lượng nước. Mỗi giọt nước chảy qua bột cà phê sẽ hòa tan axit và đường. Nước tinh khiết Verilys giúp bạn kiểm soát tuyệt đối quá trình chiết xuất, cho ra ly cà phê sạch vị, ngọt hậu và không bị "nhiễu" tạp chất.</p>
+                </div>
+                <div class="comparison-card">
+                    <div class="comparison-icon"><i class="fas fa-mug-hot"></i></div>
+                    <h3>French press & Cold brew</h3>
+                    <p>Với French press, nước tinh khiết tránh làm vẩn đục body cà phê. Với cold brew ngâm lạnh 12-24h, nước càng tinh khiết càng giữ được vị ngọt tự nhiên mà không bị lẫn mùi khó chịu từ clo hay kim loại. Verilys là lựa chọn hoàn hảo cho mẻ cold brew trong veo, thanh mát.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Glass vs Plastic Section -->
-    <section class="section comparison-section">
+    <section class="section" style="background-color: var(--white);">
         <div class="container">
             <div class="section-title">
-                <h2>Tại sao chai thủy tinh?</h2>
+                <h2>Tại sao chai thủy tinh là "người bảo vệ" hương vị?</h2>
             </div>
             <div class="comparison-grid">
                 <div class="comparison-card">
@@ -785,12 +834,12 @@
                         <i class="fas fa-wine-bottle"></i>
                     </div>
                     <h3>🥃 Chai Thủy Tinh Verilys</h3>
-                    <p>Thủy tinh trơ hóa học, không tương tác với nước và các hợp chất trong cà phê</p>
+                    <p>Thủy tinh trơ hóa học, không chứa BPA, không giải phóng vi nhựa. Đặc biệt, thủy tinh không hấp thụ hay truyền mùi từ môi trường, giữ nước tinh khiết tuyệt đối cho đến giọt cuối cùng.</p>
                     <ul class="pros-cons">
-                        <li class="good">Không hấp thụ mùi</li>
-                        <li class="good">Không giải phóng hóa chất</li>
-                        <li class="good">Giữ nước tinh khiết đến giọt cuối cùng</li>
-                        <li class="good">Có thể tái sử dụng vô hạn</li>
+                        <li class="good">Không tương tác với nước và cà phê</li>
+                        <li class="good">Giữ trọn vẹn TDS và độ tinh khiết</li>
+                        <li class="good">Tái sử dụng vô hạn, thân thiện môi trường</li>
+                        <li class="good">Cảm giác cầm nắm sang trọng, đẳng cấp</li>
                     </ul>
                 </div>
                 <div class="comparison-card">
@@ -798,12 +847,12 @@
                         <i class="fas fa-recycle"></i>
                     </div>
                     <h3>⚠️ Chai Nhựa PET</h3>
-                    <p>Nhựa PET có thể ảnh hưởng đến chất lượng nước khi để lâu</p>
+                    <p>Nhựa PET có thể giải phóng chất chống oxy hóa và chất hóa dẻo khi tiếp xúc nhiệt hoặc thời gian dài. Những hợp chất này dù ở hàm lượng thấp cũng đủ làm thay đổi hương vị tinh tế của cà phê đặc sản.</p>
                     <ul class="pros-cons">
-                        <li class="bad">Có thể hấp thụ mùi từ môi trường</li>
-                        <li class="bad">Giải phóng chất chống oxy hóa giả tạo khi để lâu</li>
-                        <li class="bad">Ảnh hưởng đến hương vị tinh tế của cà phê đặc sản</li>
-                        <li class="bad">Gây hại cho môi trường</li>
+                        <li class="bad">Có thể hấp thụ mùi từ môi trường xung quanh</li>
+                        <li class="bad">Nguy cơ giải phóng hóa chất khi bảo quản lâu</li>
+                        <li class="bad">Ảnh hưởng đến sự thuần khiết của nước</li>
+                        <li class="bad">Khó phân hủy, gây áp lực lên hệ sinh thái</li>
                     </ul>
                 </div>
             </div>
@@ -814,13 +863,13 @@
     <section class="section brewing-section">
         <div class="container">
             <div class="section-title">
-                <h2>☕ Hướng dẫn pha cà phê pour-over hoàn hảo với Verilys</h2>
+                <h2>☕ Hướng dẫn pour-over hoàn hảo với Verilys</h2>
             </div>
             <div class="brewing-steps">
                 <div class="brew-step">
                     <div class="step-number">1</div>
                     <h3>Tỉ lệ vàng 1:16</h3>
-                    <p>1g cà phê : 16g nước Verilys. Ví dụ: 18g cà phê → 288ml nước. Tỉ lệ này giúp cân bằng vị chua, ngọt và đắng.</p>
+                    <p>1g cà phê : 16g nước Verilys. Ví dụ: 18g cà phê → 288ml nước. Tỉ lệ này giúp cân bằng giữa vị chua, ngọt và body. Với Verilys, bạn không cần lo lắng về khoáng thừa làm sai lệch tỉ lệ.</p>
                 </div>
                 <div class="brew-step">
                     <div class="step-number">2</div>
@@ -828,12 +877,40 @@
                     <p>88-96°C tùy mức độ rang:<br>
                     • Rang sáng: 90-93°C<br>
                     • Rang trung: 93-95°C<br>
-                    • Rang tối: 85-88°C</p>
+                    • Rang tối: 85-88°C<br>
+                    Nước tinh khiết Verilys sôi ở 100°C chuẩn, dễ dàng kiểm soát nhiệt độ.</p>
                 </div>
                 <div class="brew-step">
                     <div class="step-number">3</div>
                     <h3>Kỹ thuật rót nước</h3>
-                    <p>Rót nước chậm, xoay đều theo vòng tròn từ tâm ra ngoài. Thời gian chiết xuất lý tưởng: 2.5 - 3.5 phút.</p>
+                    <p>Rót nước chậm, xoay đều theo vòng tròn từ tâm ra ngoài. Thời gian chiết xuất lý tưởng: 2.5 - 3.5 phút. Sử dụng nước Verilys, bạn sẽ thấy cà phê nở hoa (bloom) đều và thơm hơn hẳn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>❓ Giải đáp thắc mắc về nước & cà phê</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Tại sao không nên dùng nước khoáng để pha cà phê?</h4>
+                    <p>Nước khoáng chứa hàm lượng natri, canxi cao dễ làm cà phê có vị đắng gắt hoặc mặn. Ngoài ra, bicarbonate có thể trung hòa axit tự nhiên, làm mất đi độ sáng (brightness) đặc trưng của cà phê specialty.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Nước cất có tốt cho cà phê không?</h4>
+                    <p>Nước cất (TDS ~0 ppm) quá "đói" khoáng, khiến cà phê bị chiết xuất kém, vị nhạt và thiếu cấu trúc. Verilys cân bằng ở mức TDS lý tưởng, không quá cao cũng không quá thấp, chính là lựa chọn tối ưu.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Verilys khác gì với nước đóng chai thông thường?</h4>
+                    <p>Verilys là nước tinh khiết RO 9 bước, không chứa clo, kim loại nặng hay vi khuẩn. Đựng trong chai thủy tinh cao cấp giúp bảo toàn chất lượng nước, đặc biệt phù hợp với cà phê đặc sản và ẩm thực tinh tế.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Làm sao để biết nước đạt chuẩn pha cà phê?</h4>
+                    <p>Bạn có thể dùng bút đo TDS. Chỉ số từ 75-250 ppm, không có mùi clo hay vị lạ là đạt. Verilys luôn duy trì chất lượng đồng nhất theo từng lô, giúp bạn yên tâm pha chế mỗi ngày.</p>
                 </div>
             </div>
         </div>
@@ -844,27 +921,27 @@
         <div class="container">
             <div class="zerowaste-content">
                 <div class="zerowaste-text">
-                    <h3>🌱 Cam kết tái sử dụng – Zero Waste</h3>
-                    <p>Chai thủy tinh Verilys không chỉ giữ nước tinh khiết mà còn có thể tái sử dụng cho nhiều mục đích khác nhau, góp phần bảo vệ môi trường.</p>
+                    <h3>🌱 Sống xanh cùng Verilys – Zero Waste</h3>
+                    <p>Mỗi chai thủy tinh Verilys đều có thể tái sử dụng hàng trăm lần. Sau khi thưởng thức cà phê, bạn có thể biến chúng thành những vật dụng hữu ích, giảm thiểu rác thải nhựa ra môi trường.</p>
                     <div class="reuse-ideas">
                         <div class="reuse-idea">
                             <i class="fas fa-pour"></i>
-                            <span>Bình rót nước pour-over</span>
+                            <span>Bình rót nước pour-over chuyên dụng</span>
                         </div>
                         <div class="reuse-idea">
                             <i class="fas fa-jar"></i>
-                            <span>Đựng syrup, nước cốt</span>
+                            <span>Đựng syrup, nước cốt, cà phê cold brew</span>
                         </div>
                         <div class="reuse-idea">
                             <i class="fas fa-seedling"></i>
-                            <span>Chậu thủy canh mini</span>
+                            <span>Chậu thủy canh mini cho góc bếp</span>
                         </div>
                         <div class="reuse-idea">
                             <i class="fas fa-gift"></i>
-                            <span>Bình đựng quà tặng handmade</span>
+                            <span>Bình đựng quà tặng handmade độc đáo</span>
                         </div>
                     </div>
-                    <p style="margin-top: 20px;"><strong>✅ Hoàn toàn zero waste – Mỗi chai thủy tinh Verilys là một món quà cho hành tinh.</strong></p>
+                    <p style="margin-top: 20px;"><strong>✅ Mỗi chai Verilys là một bước tiến đến lối sống không rác thải, nơi sự tinh tế gặp gỡ trách nhiệm với hành tinh.</strong></p>
                 </div>
                 <div class="zerowaste-image">
                     <img src="https://i.ibb.co/1Ympxwp9/500ml.jpg" alt="Tái sử dụng chai thủy tinh Verilys">
@@ -920,7 +997,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2026 Verilys. Nước tinh khiết cho cà phê đặc sản – Tinh hoa từ thiên nhiên.</p>
+                <p>&copy; 2026 Verilys. Nước tinh khiết cho cà phê đặc sản – Tinh hoa từ thiên nhiên, nâng tầm ly cà phê mỗi sáng.</p>
             </div>
         </div>
     </footer>
@@ -965,7 +1042,7 @@
             });
         }, observerOptions);
         
-        document.querySelectorAll('.brew-step, .comparison-card, .science-text, .zerowaste-text').forEach(el => {
+        document.querySelectorAll('.brew-step, .comparison-card, .science-text, .zerowaste-text, .faq-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
